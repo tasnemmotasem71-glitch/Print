@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد</title>
+</head>
+<body>
+
+<header>
+    <h1>إنشاء حساب جديد</h1>
+    <p>أنشئي حسابك للاستفادة من خدماتنا</p>
+</header>
+
+<nav>
+    <a href="login.html">تسجيل الدخول</a> |
+    <a href="index.html">الرئيسية</a> |
+    <a href="contact.html">اتصل بنا</a>
+</nav>
+
+<main>
+    <h2>بيانات الحساب</h2>
+
+    <form action="login.html" method="get">
+        <label for="fullname">الاسم الكامل:</label><br>
+        <input type="text" id="fullname" name="fullname"
+               placeholder="أدخلي الاسم الكامل" required>
+        <br><br>
+
+        <label for="email">البريد الإلكتروني:</label><br>
+        <input type="email" id="email" name="email"
+               placeholder="example@email.com" required>
+        <br><br>
+
+        <label for="phone">رقم الهاتف:</label><br>
+        <input type="tel" id="phone" name="phone"
+               placeholder="أدخلي رقم الهاتف" required>
+        <br><br>
+
+        <label for="newpassword">كلمة المرور:</label><br>
+        <input type="password" id="newpassword" name="password"
+               minlength="6" required>
+        <br><br>
+
+        <label for="confirm">تأكيد كلمة المرور:</label><br>
+        <input type="password" id="confirm" name="confirm"
+               minlength="6" required>
+        <br><br>
+
+        <label for="address">العنوان:</label><br>
+        <input type="text" id="address" name="address"
+               placeholder="المدينة أو المنطقة">
+        <br><br>
+
+        <button type="submit">إنشاء الحساب</button>
+    </form>
+
+    <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+</main>
+
+<footer>
+    <p>نشكرك على اختيار خدماتنا</p>
+</footer>
+
+</body>
+</html>
+

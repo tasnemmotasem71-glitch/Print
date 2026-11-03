@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة الإدارة</title>
+</head>
+<body>
+
+<header>
+    <h1>لوحة إدارة خدمات الطباعة والتصوير</h1>
+    <p>مرحباً بك في لوحة إدارة النظام</p>
+</header>
+
+<nav>
+    <a href="index.html">الرئيسية</a> |
+    <a href="admin.html">لوحة الإدارة</a> |
+    <a href="services.html">الخدمات</a> |
+    <a href="track-orders.html">الطلبات</a> |
+    <a href="pricing.html">الأسعار</a> |
+    <a href="contact.html">الرسائل</a> |
+    <a href="login.html">تسجيل الخروج</a>
+</nav>
+
+<main>
+    <section>
+        <h2>ملخص النظام</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>المؤشر</th>
+                    <th>العدد التجريبي</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>إجمالي الطلبات</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>الطلبات الجديدة</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>الطلبات قيد التنفيذ</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>الطلبات المكتملة</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>الطلبات الملغاة</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>عدد العملاء</td>
+                    <td>75</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>إدارة الطلبات</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>رقم الطلب</th>
+                    <th>اسم العميل</th>
+                    <th>الخدمة</th>
+                    <th>الحالة الحالية</th>
+                    <th>الحالة الجديدة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ORD-001</td>
+                    <td>عميل تجريبي 1</td>
+                    <td>طباعة</td>
+                    <td>قيد التنفيذ</td>
+                    <td>
+                        <select name="status1">
+                            <option>تم الاستلام</option>
+                            <option>قيد المراجعة</option>
+                            <option selected>قيد التنفيذ</option>
+                            <option>تم التسليم</option>
+                            <option>ملغي</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ORD-002</td>
+                    <td>عميل تجريبي 2</td>
+                    <td>تصوير</td>
+                    <td>تم التسليم</td>
+                    <td>
+                        <select name="status2">
+                            <option>تم الاستلام</option>
+                            <option>قيد المراجعة</option>
+                            <option>قيد التنفيذ</option>
+                            <option selected>تم التسليم</option>
+                            <option>ملغي</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>تغيير الحالة هنا تجريبي ولن يُحفظ في قاعدة بيانات.</p>
+    </section>
+
+    <section>
+        <h2>إدارة الخدمات</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>اسم الخدمة</th>
+                    <th>الوصف</th>
+                    <th>الحالة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>الطباعة</td>
+                    <td>طباعة المستندات والبحوث</td>
+                    <td>متاحة</td>
+                </tr>
+                <tr>
+                    <td>التصوير</td>
+                    <td>تصوير الأوراق والمستندات</td>
+                    <td>متاحة</td>
+                </tr>
+                <tr>
+                    <td>التجليد</td>
+                    <td>تجليد البحوث والتقارير</td>
+                    <td>متاحة</td>
+                </tr>
+                <tr>
+                    <td>المسح الضوئي</td>
+                    <td>تحويل المستندات إلى ملفات رقمية</td>
+                    <td>متاحة</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><a href="pricing.html">مراجعة قائمة الأسعار</a></p>
+    </section>
+
+    <section>
+        <h2>إدارة العملاء</h2>
+        <p>يمكن أن تعرض هذه المساحة أسماء العملاء وبيانات التواصل
+        وسجل الطلبات بعد ربط الموقع بقاعدة بيانات في مرحلة PHP.</p>
+    </section>
+
+    <section>
+        <h2>التقارير</h2>
+        <ul>
+            <li>تقرير الطلبات اليومية.</li>
+            <li>تقرير الخدمات الأكثر طلباً.</li>
+            <li>تقرير الطلبات المكتملة والمتأخرة.</li>
+            <li>تقرير الإيرادات والمصروفات.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>لوحة الإدارة - بيانات تجريبية للمشروع</p>
+</footer>
+
+</body>
+</html>

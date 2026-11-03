@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب خدمة جديدة</title>
+</head>
+<body>
+
+<header>
+    <h1>طلب خدمة جديدة</h1>
+    <p>املئي النموذج التالي لتحديد الخدمة المطلوبة</p>
+</header>
+
+<nav>
+    <a href="index.html">الرئيسية</a> |
+    <a href="services.html">الخدمات</a> |
+    <a href="track-orders.html">متابعة الطلبات</a> |
+    <a href="pricing.html">الأسعار</a> |
+    <a href="my-account.html">حسابي</a>
+</nav>
+
+<main>
+    <h2>بيانات العميل</h2>
+
+    <form action="track-orders.html" method="get">
+        <label for="customer">اسم العميل:</label><br>
+        <input type="text" id="customer" name="customer" required>
+        <br><br>
+
+        <label for="phone">رقم الهاتف:</label><br>
+        <input type="tel" id="phone" name="phone" required>
+        <br><br>
+
+        <label for="email">البريد الإلكتروني:</label><br>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <h2>تفاصيل الخدمة</h2>
+
+        <label for="service">نوع الخدمة:</label><br>
+        <select id="service" name="service" required>
+            <option value="">اختاري الخدمة</option>
+            <option value="printing">الطباعة</option>
+            <option value="copying">التصوير</option>
+            <option value="binding">التجليد</option>
+            <option value="scanning">المسح الضوئي</option>
+            <option value="formatting">تنسيق المستندات</option>
+        </select>
+        <br><br>
+
+        <label for="paper">حجم الورق:</label><br>
+        <select id="paper" name="paper">
+            <option value="A4">A4</option>
+            <option value="A3">A3</option>
+            <option value="other">حجم آخر</option>
+        </select>
+        <br><br>
+
+        <label for="color">نوع الطباعة:</label><br>
+        <select id="color" name="color">
+            <option value="black">أبيض وأسود</option>
+            <option value="color">ملون</option>
+            <option value="not-applicable">لا ينطبق</option>
+        </select>
+        <br><br>
+
+        <label for="sides">وجه الطباعة:</label><br>
+        <select id="sides" name="sides">
+            <option value="single">وجه واحد</option>
+            <option value="double">الوجهان</option>
+            <option value="not-applicable">لا ينطبق</option>
+        </select>
+        <br><br>
+
+        <label for="quantity">الكمية أو عدد الصفحات:</label><br>
+        <input type="number" id="quantity" name="quantity"
+               min="1" required>
+        <br><br>
+
+        <label for="deadline">تاريخ التسليم المطلوب:</label><br>
+        <input type="date" id="deadline" name="deadline">
+        <br><br>
+
+        <label for="details">تفاصيل إضافية:</label><br>
+        <textarea id="details" name="details" rows="5" cols="35"
+                  placeholder="اكتبي أي مواصفات إضافية للطلب"></textarea>
+        <br><br>
+
+        <button type="submit">إرسال الطلب</button>
+        <button type="reset">مسح البيانات</button>
+    </form>
+
+    <p><a href="pricing.html">راجعي الأسعار قبل إرسال الطلب</a></p>
+</main>
+
+<footer>
+    <p>شكراً لاختيارك خدماتنا</p>
+</footer>
+
+</body>
+</html>

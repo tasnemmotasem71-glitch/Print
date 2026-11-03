@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+</head>
+<body>
+
+<header>
+    <h1>اتصل بنا</h1>
+    <p>نسعد بتواصلك معنا ونرحب باستفساراتك وملاحظاتك</p>
+</header>
+
+<nav>
+    <a href="index.html">الرئيسية</a> |
+    <a href="services.html">الخدمات</a> |
+    <a href="new-order.html">طلب خدمة</a> |
+    <a href="pricing.html">الأسعار</a> |
+    <a href="my-account.html">حسابي</a>
+</nav>
+
+<main>
+    <section>
+        <h2>معلومات التواصل</h2>
+
+        <p>العنوان: ود مدني، السودان</p>
+        <p>رقم الهاتف:
+            <a href="tel:+249000000000">+249 000 000 000</a>
+        </p>
+        <p>البريد الإلكتروني:
+            <a href="mailto:info@example.com">info@example.com</a>
+        </p>
+
+        
+    </section>
+
+    <section>
+        <h2>أرسلي لنا رسالة</h2>
+
+        <form action="contact.html" method="get">
+            <label for="name">الاسم الكامل:</label><br>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">البريد الإلكتروني:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="subject">موضوع الرسالة:</label><br>
+            <select id="subject" name="subject">
+                <option value="inquiry">استفسار عام</option>
+                <option value="order">استفسار عن طلب</option>
+                <option value="complaint">شكوى</option>
+                <option value="suggestion">اقتراح</option>
+                <option value="other">موضوع آخر</option>
+            </select>
+            <br><br>
+
+            <label for="message">نص الرسالة:</label><br>
+            <textarea id="message" name="message" rows="6" cols="35"
+                      placeholder="اكتبي رسالتك هنا" required></textarea>
+            <br><br>
+
+            <button type="submit">إرسال الرسالة</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>أضيفي تعليقك أو اقتراحك</h2>
+
+        <form action="contact.html" method="get">
+            <label for="comment-name">الاسم:</label><br>
+            <input type="text" id="comment-name" name="comment_name" required>
+            <br><br>
+
+            <label for="comment-email">البريد الإلكتروني لاستلام الرد:</label><br>
+            <input type="email" id="comment-email" name="comment_email" required>
+            <br><br>
+
+            <label for="comment">التعليق أو الاقتراح:</label><br>
+            <textarea id="comment" name="comment" rows="5" cols="35"
+                      placeholder="شاركي معنا رأيك" required></textarea>
+            <br><br>
+
+            <button type="submit">إضافة التعليق</button>
+            <button type="reset">مسح التعليق</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>شكراً لزيارتك نظام إدارة خدمات الطباعة والتصوير</p>
+    <p>جميع الحقوق محفوظة © 2026</p>
+</footer>
+
+</body>
+</html>

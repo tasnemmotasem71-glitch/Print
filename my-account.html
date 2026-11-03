@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حسابي</title>
+</head>
+<body>
+
+<header>
+    <h1>حسابي</h1>
+    <p>إدارة البيانات الشخصية والاطلاع على الطلبات السابقة</p>
+</header>
+
+<nav>
+    <a href="index.html">الرئيسية</a> |
+    <a href="new-order.html">طلب جديد</a> |
+    <a href="track-orders.html">متابعة الطلبات</a> |
+    <a href="pricing.html">الأسعار</a> |
+    <a href="login.html">تسجيل الدخول</a>
+</nav>
+
+<main>
+    <section>
+        <h2>البيانات الشخصية</h2>
+
+        <form action="my-account.html" method="get">
+            <label for="fullname">الاسم الكامل:</label><br>
+            <input type="text" id="fullname" name="fullname"
+                   value="اسم العميل التجريبي">
+            <br><br>
+
+            <label for="email">البريد الإلكتروني:</label><br>
+            <input type="email" id="email" name="email"
+                   value="customer@example.com">
+            <br><br>
+
+            <label for="phone">رقم الهاتف:</label><br>
+            <input type="tel" id="phone" name="phone"
+                   value="+249000000000">
+            <br><br>
+
+            <label for="address">العنوان:</label><br>
+            <input type="text" id="address" name="address"
+                   value="ود مدني - السودان">
+            <br><br>
+
+            <button type="submit">تحديث البيانات</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>ملخص الطلبات</h2>
+
+        <ul>
+            <li>إجمالي الطلبات: 4 طلبات تجريبية.</li>
+            <li>الطلبات قيد التنفيذ: طلب واحد.</li>
+            <li>الطلبات المكتملة: طلب واحد.</li>
+            <li>الطلبات قيد المراجعة: طلب واحد.</li>
+            <li>الطلبات المستلمة: طلب واحد.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>أحدث الطلبات</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>رقم الطلب</th>
+                    <th>الخدمة</th>
+                    <th>الكمية</th>
+                    <th>الحالة</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ORD-001</td>
+                    <td>طباعة بحث</td>
+                    <td>50 صفحة</td>
+                    <td>قيد التنفيذ</td>
+                </tr>
+                <tr>
+                    <td>ORD-002</td>
+                    <td>تصوير مستندات</td>
+                    <td>100 صفحة</td>
+                    <td>تم التسليم</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><a href="track-orders.html">عرض جميع الطلبات</a></p>
+        <p><a href="new-order.html">إنشاء طلب جديد</a></p>
+    </section>
+</main>
+
+<footer>
+   
+</footer>
+
+</body>
+</html>
+

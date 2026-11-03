@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متابعة الطلبات</title>
+</head>
+<body>
+
+<header>
+    <h1>متابعة الطلبات</h1>
+    <p>تابعي حالة طلبات الطباعة والتصوير</p>
+</header>
+
+<nav>
+    <a href="index.html">الرئيسية</a> |
+    <a href="new-order.html">طلب جديد</a> |
+    <a href="pricing.html">الأسعار</a> |
+    <a href="my-account.html">حسابي</a> |
+    <a href="contact.html">اتصل بنا</a>
+</nav>
+
+<main>
+    <h2>البحث عن طلب</h2>
+
+    <form action="track-orders.html" method="get">
+        <label for="order-number">رقم الطلب:</label><br>
+        <input type="text" id="order-number" name="order_number"
+               placeholder="مثال: ORD-001">
+        <button type="submit">البحث</button>
+    </form>
+
+    <h2>قائمة الطلبات</h2>
+
+    <table border="1">
+        <caption>بيانات الطلبات</caption>
+        <thead>
+            <tr>
+                <th>رقم الطلب</th>
+                <th>نوع الخدمة</th>
+                <th>تاريخ الطلب</th>
+                <th>الكمية</th>
+                <th>الحالة</th>
+                <th>تاريخ التسليم</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ORD-001</td>
+                <td>طباعة بحث</td>
+                <td>2026-10-01</td>
+                <td>50 صفحة</td>
+                <td>قيد التنفيذ</td>
+                <td>2026-10-14</td>
+            </tr>
+            <tr>
+                <td>ORD-002</td>
+                <td>تصوير مستندات</td>
+                <td>2026-10-02</td>
+                <td>100 صفحة</td>
+                <td>تم التسليم</td>
+                <td>2026-10-04</td>
+            </tr>
+            <tr>
+                <td>ORD-003</td>
+                <td>تجليد بحث</td>
+                <td>2026-10-05</td>
+                <td>3 نسخ</td>
+                <td>قيد المراجعة</td>
+                <td>2026-10-15</td>
+            </tr>
+            <tr>
+                <td>ORD-004</td>
+                <td>مسح ضوئي</td>
+                <td>2026-10-06</td>
+                <td>20 صفحة</td>
+                <td>تم الاستلام</td>
+                <td>2026-10-16</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>معاني حالات الطلب</h2>
+    <ul>
+        <li>تم الاستلام: وصل الطلب إلى الإدارة.</li>
+        <li>قيد المراجعة: تتم مراجعة تفاصيل الطلب.</li>
+        <li>قيد التنفيذ: يجري تنفيذ الخدمة.</li>
+        <li>تم التسليم: تم تسليم الطلب للعميل.</li>
+    </ul>
+
+    <p><a href="new-order.html">تقديم طلب جديد</a></p>
+</main>
+
+<footer>
+    <p>إذا احتجتِ إلى مساعدة، <a href="contact.html">تواصلي معنا</a>.</p>
+</footer>
+
+</body>
+</html>
